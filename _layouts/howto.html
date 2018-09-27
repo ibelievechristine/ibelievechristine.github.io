@@ -59,6 +59,20 @@
       font-weight: normal;
       color: #888;
     }
+
+    textarea, pre {
+      font-family: monospace;
+      font-size: 16px;
+      white-space: pre-wrap;
+    }
+
+    @media (max-width: 600px) {
+      .post-title { font-size: 24px; }
+      .post-content { font-size: 14px; }
+      textarea, pre, code {
+        font-size: 12px;
+      }
+    }
   </style>
 
   <script>
@@ -79,7 +93,7 @@
     var PROLOGUE = "I believe Christine Blasey Ford.";
     var PLACEHOLDER = "[anything you want to add]";
     var EPILOGUE =
-"If you're watching, I challenge you to make your own video\n" +
+"If you're watching, I challenge you to make your own video " +
 "and share it with your friends, especially if you're a man.";
 
     var DEFAULT_SPEECH = PROLOGUE + "\n\n" + PLACEHOLDER + "\n\n" + EPILOGUE;
@@ -138,13 +152,12 @@
             "Blahzee"</a>.
         </p>
 
-<textarea id="speech" style="font-family: monospace; font-size: 16px" cols=60 rows=8 onchange="checkIfEdited()" oninput="checkIfEdited()">
+<textarea id="speech" style="max-width: 100%" cols=60 rows=8 onchange="checkIfEdited()" oninput="checkIfEdited()">
 I believe Christine Blasey Ford.
 
 [anything you want to add]
 
-If you're watching, I challenge you to make your own video
-and share it with your friends, especially if you're a man.
+If you're watching, I challenge you to make your own video and share it with your friends, especially if you're a man.
 </textarea>
         </p>
       </li>
@@ -213,7 +226,7 @@ and share it with your friends, especially if you're a man.
 
           <div class="highlighter-rouge">
             <div class="highlight">
-<pre class="highlight"><code>#IBelieveChristine.
+<pre class="highlight" style="max-width: 100%"><code>#IBelieveChristine.
 If you do too, join me in speaking up at ibelievechristine.com.
 
 Hey, <var>@friend1 @friend2 @friend3</var>, let's do this.</code></pre>
