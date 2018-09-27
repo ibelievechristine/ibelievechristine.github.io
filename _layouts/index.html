@@ -27,9 +27,10 @@
     }
 
     .fb-post, .fb-video {
-      margin-bottom: 8px;
+      margin-bottom: 16px;
       background: #ffffff;
-      border-radius: 6px;
+      border-radius: 4px;
+      display: block !important;
     }
 
     .grid {
@@ -70,10 +71,10 @@
       .tab { display: inline-block; }
       .selected.tab { background: #e0e0e0; }
       a.search { display: none; }
-      .facebook.cell { grid-column: 1; }
       .spacer.cell { display: block; border-bottom: 12px solid #fdfdfd; }
-      .twitter.head.cell { grid-row: 4; }
-      .twitter.body.cell { grid-row: 5; }
+      .facebook.cell { grid-column: 1; }
+      .facebook.head.cell { grid-row: 4; }
+      .facebook.body.cell { grid-row: 5; }
     }
   </style>
 
@@ -111,20 +112,20 @@
   <div class="grid">
     <div class="twitter head cell" id="twitter">
       <a class="search" href="https://twitter.com/search?f=videos&q=%23IBelieveChristineBlaseyFord&src=typd">Twitter</a>
-      <div class="tab"><a href="#facebook">Facebook</a></div>
       <div class="tab selected">Twitter</div>
+      <div class="tab"><a href="#facebook">Facebook</a></div>
     </div>
     <div class="facebook head cell" id="facebook">
       <a class="search" href="https://www.facebook.com/search/videos/?q=%23ibelievechristineblaseyford">Facebook</a>
-      <div class="tab selected">Facebook</div>
       <div class="tab"><a href="#twitter">Twitter</a></div>
+      <div class="tab selected">Facebook</div>
     </div>
     <div class="twitter body cell">
       <a class="twitter-timeline" href="https://twitter.com/ibelievecbf?ref_src=twsrc%5Etfw">Tweets by @ibelievecbf</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </div>
     <div class="facebook body cell">
-      <div class="fb-post" data-width="350" data-href="https://www.facebook.com/100013409790997/posts/533197273803928"></div>
-      <div class="fb-video" data-width="350" data-href="https://www.facebook.com/zestyping/videos/10108541432427753" data-show-text="true"></div>
+      <div class="fb-post" data-width="350" data-href="https://www.facebook.com/100013409790997/posts/533197273803928">Loading...</div>
+      <div class="fb-video" data-width="350" data-href="https://www.facebook.com/zestyping/videos/10108541432427753" data-show-text="true">Loading...</div>
       <div class="fb-video" data-width="350" data-href="https://www.facebook.com/marcscheff/videos/10160855209705430" data-show-text="true"></div>
       <div class="fb-video" data-width="350" data-href="https://www.facebook.com/raydeng/videos/10101875693432152" data-show-text="true"></div>
       <div class="fb-video" data-width="350" data-href="https://www.facebook.com/robertvandewalle/videos/10156162726458649" data-show-text="true"></div>
