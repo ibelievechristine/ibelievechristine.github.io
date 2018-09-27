@@ -7,11 +7,8 @@ If you believe Dr. Christine Blasey Ford, it's time to speak up.
 
 Everyone is welcome to participate.
 
+<a class="button" href="howto.html">Here's how to participate.</a>
+
 In particular, though, if you're a man, we're asking you to step up now.
 It's not right for the most visible men to be a small group attacking her,
 and it's not right for women to have to stand alone.  Let's change that.
-
-<a class="button" href="howto.html">Here's how to participate.</a>
-
-We want to make sure that voices of support come through for her,
-especially before the scheduled committee hearing on Thursday.
